@@ -42,15 +42,18 @@ body{
     height: 60vh;
     background-color: #D8DFE8;
     border: none;
- 
+    font-family: "Inter", sans-serif;
     font-size: 32px;
     color: #0A3871;
     text-align: left;
 }
 
+.encriptador-entrada-input::placeholder{
+    color: #0A3871;
+}
+
 .encriptador-entrada-input:focus-visible{
-    border: none !important;
-    box-shadow: none !important;
+    outline: none;
 }
 
 .encriptador-salida{
@@ -59,11 +62,31 @@ body{
     justify-content: center;
     background-color: white;
     width: 400px;
-    font-family: "Inter", sans-serif;
-    padding: 32px;
-    height: 90vh;
+    height: 80vh;
     border-radius: 32px;
     box-shadow: 0px 24px 32px 8px #00000014;
+}
+
+.encriptador-salida-resultado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.encriptador-salida-resultado-texto{
+    width: 336px;
+    height: 60vh;
+    padding: 32px;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    color: #495057;
+    text-align: left;    
+}
+
+.encriptador-salida-resultado-texto:focus-visible{
+    outline: none !important;
 }
 
 .mensaje-no-encontrado{
@@ -85,6 +108,16 @@ body{
     font-family: "Inter", sans-serif;
 }
 
+.texto-advertencia{
+    display: flex;
+}
+
+.texto-advertencia img{
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
 .btn{
     width: 328px;
     padding: 24px;
@@ -104,4 +137,43 @@ body{
     background-color: #D8DFE8;
     color: #0A3871;
 
+}
+
+/*RESPONSIVE TABLET*/
+
+@media only screen and (max-width:820px)  {
+
+.contenedor{
+    flex-direction: column;
+    gap: 50px;
+}
+
+.encriptador-entrada-input{
+    height: 50vh;
+}
+
+.encriptador-salida{
+    width: 100%;
+}
+
+.mensaje-no-encontrado{
+    padding: 32px;
+}
+
+.encriptador-salida {
+    height: 100%;
+    width: 100%;
+}
+
+.mensaje-no-encontrado img{
+    display: none;
+}
+
+.encriptador-salida-resultado-texto{
+    width: 100%;
+}
+
+.btn-copiar{
+    padding: 32px;
+}
 }
