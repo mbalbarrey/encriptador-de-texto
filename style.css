@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    color: black;
 }
 
 body{
@@ -143,6 +142,14 @@ body{
 .btn-copiar{
     background-color: transparent;
     color: #0A3871;
+}
+
+.footer{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    background-color: rgb(33, 103, 141);
+    color: white !important;
 }
 
 /*RESPONSIVE TABLET*/
