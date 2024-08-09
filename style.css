@@ -135,21 +135,13 @@ body{
     border-radius: 24px;
     border: 1px solid #0A3871;
     font-size: 16px;
-<<<<<<< HEAD
     font-family: "Inter", sans-serif;
     text-align: center;    
-=======
-    font-family: "Inter", sans-serif;    
->>>>>>> 3de57863a740f9a21a2d94ca7e9465946bfc41d7
 }
 
 .btn-encriptar{
     background-color: #0A3871;
     color: white;
-<<<<<<< HEAD
-=======
-    padding-left: 0px;
->>>>>>> 3de57863a740f9a21a2d94ca7e9465946bfc41d7
     margin-left: 0px;
 }
 

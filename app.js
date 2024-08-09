@@ -19,7 +19,6 @@ function encriptarTexto(){
     }
 }
 
-<<<<<<< HEAD
 function desencriptarTexto(){
     var textoUsuario = document.getElementById('entrada').value;    
     if (textoUsuario != '') {
@@ -38,8 +37,6 @@ function desencriptarTexto(){
     }
 }       
 
-=======
->>>>>>> 3de57863a740f9a21a2d94ca7e9465946bfc41d7
 function tieneMayusculasOAcentos(texto){
     var tieneMayusculas = /[A-Z]/.test(texto);
     var tieneAcentos = /[áéíóúÁÉÍÓÚüÜ]/.test(texto);
@@ -52,7 +49,6 @@ function tieneMayusculasOAcentos(texto){
 }
 
 function encriptar(texto){
-<<<<<<< HEAD
     let textoEncriptado = texto
     .replace(/e/g, "enter")
     .replace(/i/g, "imes")
@@ -78,59 +74,3 @@ function copiarSalida() {
     document.execCommand("copy");
     alert("Se ha copiado la salida al portapapeles");
 }
-=======
-    var textoSalida = '';
-    for (let i = 0; i< texto.length; i++) {
-        var caracterEntrada = texto[i];
-        var caracterSalida = '';
-        /*ENCRIPTADOR*/
-        if (caracterEntrada == 'e') {
-            caracterSalida = 'enter';
-        } else if (caracterEntrada == 'i')
-            {
-                caracterSalida = 'imes';
-            } else if (caracterEntrada == 'a')
-            {
-                caracterSalida = 'ai';
-            } else if (caracterEntrada == 'o')
-            {
-                caracterSalida = 'ober';
-            } else if (caracterEntrada == 'u')
-            {
-                caracterSalida = 'ufat';
-            } else {
-                caracterSalida = caracterEntrada;
-            }
-            textoSalida += caracterSalida;
-    }    
-    return textoSalida;
-}
-
-function desencriptar(texto){
-    var textoSalida = '';
-    for (let i = 0; i< texto.length; i++) {
-        var caracterEntrada = texto[i];
-        var caracterSalida = '';
-        /*ENCRIPTADOR*/
-        if (caracterEntrada == 'e') {
-            caracterSalida = 'enter';
-        } else if (caracterEntrada == 'i')
-            {
-                caracterSalida = 'imes';
-            } else if (caracterEntrada == 'a')
-            {
-                caracterSalida = 'ai';
-            } else if (caracterEntrada == 'o')
-            {
-                caracterSalida = 'ober';
-            } else if (caracterEntrada == 'u')
-            {
-                caracterSalida = 'ufat';
-            } else {
-                caracterSalida = caracterEntrada;
-            }
-            textoSalida += caracterSalida;
-    }    
-    return textoSalida;
-}
->>>>>>> 3de57863a740f9a21a2d94ca7e9465946bfc41d7
