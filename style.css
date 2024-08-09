@@ -86,7 +86,7 @@ body{
     color: #495057;
     text-align: left;
     background-color: transparent;
-    resize: none;
+    resize: vertical;
 }
 
 .encriptador-salida-resultado-textarea:focus-visible{
@@ -113,6 +113,7 @@ body{
 }
 
 .texto-advertencia{
+    margin-top: 15px;
     display: flex;
 }
 
@@ -145,9 +146,18 @@ body{
     margin-left: 0px;
 }
 
+.btn-encriptar:hover{
+    background-color: #0a38719f;
+    margin-left: 0px;
+}
+
 .btn-desencriptar{
     background-color: #D8DFE8;
     color: #0A3871;
+}
+
+.btn-desencriptar:hover{
+    background-color: #b3c8e49a;
 }
 
 .btn-copiar{
@@ -197,10 +207,11 @@ body{
 
 .encriptador-salida{
     width: 100%;
+    height: auto;
 }
 
 .mensaje-no-encontrado{
-    padding: 32px;
+    padding: 0px;
 }
 
 .mensaje-no-encontrado img{
@@ -213,15 +224,15 @@ body{
 
 .encriptador-salida-resultado-textarea{
     width: 100%;
-    height: auto;
     margin-bottom: 32px;
 }
 
 .btn-copiar{
-    padding: 32px;
     width: 100%;
 }
 }
+
+/*RESPONSIVE MOBILE*/
 
 @media only screen and (max-width:390px) {
 .contenedor{
@@ -243,6 +254,8 @@ body{
 
 .btn {
     margin-bottom: 24px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 
